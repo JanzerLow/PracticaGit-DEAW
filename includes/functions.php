@@ -92,7 +92,11 @@ function page_title()
     echo  $titulo[$page];
 }
 
-
+/**
+ * Función page_content.
+ * Imprime el contenido de la página web.
+ * Carga el archivo .phtml correspondiente desde la ruta de contenido.
+ */
 function page_content()
 {
     $page = isset($_GET['page']) ? $_GET['page'] : 'home';

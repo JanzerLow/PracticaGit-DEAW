@@ -1,24 +1,44 @@
 <?php
 
+/**
+ * Este es un archivo de las funciones de web.
+ */
 
+/**
+ * Función site_name.
+ * Imprimirá el nombre de la web.
+ * Se obtine el valor (nombre) de config 'name'.
+ */
 function site_name()
 {
     $var = config('name');
     echo $var;
 }
-
+/**
+ * Funcion site_url
+ * Imprimirá la URL de la página web.
+ * Obtiene el valor (url) de config 'site_url.
+ */
 function site_url()
 {
     $var = config('site_url');
     echo $var;
 }
-
+/**
+ * Funcion site_path
+ * Imprimirá la ruta de la página web.
+ * Obtiene el valor (ruta) de config 'path';
+ */
 function site_path()
 {
     $var = config('path');
     echo $var;
 }
-
+/**
+ * Función site_version
+ * Imprimirá la versión de la página web.
+ * Obtiene el valor (version) de config 'version'.
+ */
 function site_version()
 {
     $var = config('version');

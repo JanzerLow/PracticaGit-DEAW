@@ -45,7 +45,19 @@ function site_version()
     echo $var;
 }
 
-
+/**
+ * Genera el menú de navegación de la página web.
+ * 
+ * @param string $sep Separador entre los elementos del menú '|'.
+ * 
+ * Realiza un foreach sobre el array de navegación (nav_items).
+ * 
+ * Construye enlaces (url).
+ * 
+ * Construye el menú de navegación (nav_menu).
+ * 
+ * Finalmente imprimirá el menú (nav_menu) y elimina el separador (sep).
+ */
 function nav_menu($sep = ' | ')
 {
     $nav_menu = '';

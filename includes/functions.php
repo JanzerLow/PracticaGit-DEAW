@@ -107,6 +107,13 @@ function page_content()
     echo file_get_contents($path);          // Volcar contenidos
 }
 
+/**
+ * Funcion init
+ * 
+ * Inicializa la página web, cargando una template.
+ * 
+ * Requiere el archivo de la template desde config.
+ */
 function init()
 {
     require config('template_path') . '/template.php';

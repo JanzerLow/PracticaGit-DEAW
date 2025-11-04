@@ -75,7 +75,11 @@ function nav_menu($sep = ' | ')
     echo trim($nav_menu, $sep);
 }
 
-
+/**
+ * Función page_title
+ * Imprirá el título de la página web.
+ * Basado en el parámetro 'page' de la URL, selecciona un título del array.
+ */
 function page_title()
 {
     $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Home';
